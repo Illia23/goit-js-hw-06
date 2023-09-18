@@ -20,7 +20,8 @@ function createMarkUp(arr) {
   <img class="img-gallary" src="${url}" alt="${alt}">
   </li>`
   ).join("");
+list.insertAdjacentHTML("beforeend", markUp);
 
-  list.insertAdjacentHTML("beforeend", markUp)
-}
+};
+
 createMarkUp(images);
